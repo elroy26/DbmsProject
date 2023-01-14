@@ -27,8 +27,7 @@ if(!isset($_SESSION['email'])){
            <p>You can access and modify your personal details (name, billing address, telephone number, etc.) in order to speed up your
               future purchases and notify us of changes in your contact details.</p>
 
-           <a href="access-detail.php"> <h6 class="text-primary">ACCESS DETAILS</h6></a>
-           <p>You can change your access details (password ).</p>
+           
 
          </div>
        </div>

@@ -96,8 +96,7 @@
 
                 
                 <input class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" value="Sign in" name="signin">
-                <div class="text-center">
-                  <a class="small" href="#">Forgot password?</a></div>
+                
 
               </form>
             </div>

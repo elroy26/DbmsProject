@@ -9,7 +9,7 @@
             <div class="col-md-6">
               <h3>Our Office</h3>
               <hr>
-              <p>Lahore cantt,pakistan</p>
+              <p>Moodabidri,India</p>
             </div>
             <div class="col-md-6">
                   <form action="" method="" class=" p-3">
@@ -33,9 +33,9 @@
                 </div>
          </div>
           
-           <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d54420.52040063149!2d74.32475536753505!3d31.516399432441787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Pakistan!3m2!1d31.5203696!2d74.35874729999999!5e0!3m2!1sen!2s!4v1588778937037!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15546.471505945688!2d74.9736385269967!3d13.059977952765905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4ab01e2918607%3A0x24283d9ff370437!2sRoyal%20Furnitures!5e0!3m2!1sen!2sus!4v1673626278562!5m2!1sen!2sus" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
            
-         
+           
        </div>
          
        <?php include('include/footer.php');?>

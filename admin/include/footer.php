@@ -2,7 +2,7 @@
       <footer class="sticky-footer fixed-bottom">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>All &copy; Rights Resereved By Bc160402422 | <?php echo date('Y');?></span>
+            <span>All &copy; Rights Reserved By Elroy & Ashish | <?php echo date('Y');?></span>
           </div>
         </div>
       </footer>

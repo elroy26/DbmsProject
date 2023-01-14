@@ -53,12 +53,12 @@ if(!isset($_SESSION['email'])){
                        </div>
 
                        <div class="col-lg-6">
-                         <input type="text" name="fonts" class="form-control" placeholder="Simply Add fa-example ">
+                         <input type="text" name="fonts" class="form-control" placeholder="Eg.Bed set ">
                        </div>
                      </div>
                    </div>
                     <div class="col-lg-4">
-                    <input type="submit" name="submit" class="btn btn-primary" value="Add cat" name="category">
+                    <input type="submit" name="submit" class="btn btn-primary" value="Add" name="category">
                        </div><br/>
                        
                        </div>
@@ -94,7 +94,7 @@ if(!isset($_SESSION['email'])){
                     <th>ID</th>
                     <th>Font Awesome icon</th>
                     <th>Categories</th>
-                    <th class="text-center">Action</th>
+                    
                     
                   </tr>
                 </thead>
@@ -110,11 +110,7 @@ if(!isset($_SESSION['email'])){
                         <td><?php echo $id;?></td>
                         <td><i class="text-primary <?php echo 'fad '.$font_awesome;?>"></i></td>
                         <td><?php echo $category;?></td>
-                        <td class="text-center">
-                        <a  href="editcat.php?edit=<?php echo $id; ?>"><button type="button" class="btn btn-primary">Edit</button>
-                            </a>
-                            <a href="category.php?del=<?php echo $id;?>"><button class='ml-2 btn btn-danger' value='Delete'>Delete</button></a>
-                        </td>
+                       
                      </tr>
                       <?php
                     }

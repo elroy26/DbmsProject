@@ -90,7 +90,7 @@
                     <div class="input-group">
                       <input type="text" class="form-control" name="search" placeholder="Search Products">
                       <div class="input-group-append">
-                        <input class="btn btn-primary rounded-left" type="submit" name="sear_submit" vlaue="Search">
+                        <input class="btn btn-primary rounded-left" type="submit" name="sear_submit" value="Search">
                       </div>
                      </div>
                     </form>

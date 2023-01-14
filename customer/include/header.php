@@ -31,7 +31,7 @@ include_once('include/dbcon.php');?>
        <!--header ---> 
              <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
                <a href="" class="navbar-brand"> 
-                 Online Furniture Shop
+               Brook<sapn class="font-weight-bold">Wood</sapn>
                </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapisblenav" aria-controls="collapsiblenav">
                  <span class="navbar-toggler-icon"></span>

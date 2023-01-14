@@ -33,13 +33,13 @@ if(!isset($_SESSION['email'])){
                    <table class="table table-responsive table-hover ">
                       <thead class="thead-light">
                           <tr>
-                              <th>#Invoice</th>
+                              
                               <th width="120px">Product image</th>
                               <th>Product name</th>
                               <th>Product quantity</th>
                               <th>Total Price (Pkr)</th>
                               <th>Date</th>
-                              <th width="120px">Status</th>
+                              
                               
                           </tr>
                       </thead>
@@ -48,12 +48,12 @@ if(!isset($_SESSION['email'])){
                           <?php
                               
                                     while($order_row = mysqli_fetch_array($run)){
-                                      $order_invoice = $order_row['invoice_no'];
+                                      
                                       $order_pro_id  = $order_row['product_id'];
                                       $order_qty     = $order_row['products_qty'];
                                       $order_amount  = $order_row['product_amount'];
                                       $order_date    = $order_row['order_date'];
-                                      $order_status  = $order_row['order_status'];
+                                      
 
                                       $pro_query  = "SELECT * FROM furniture_product WHERE pid=$order_pro_id";
                                       $pro_run    = mysqli_query($con,$pro_query);
@@ -68,7 +68,7 @@ if(!isset($_SESSION['email'])){
                                     
                             ?> 
                              <tr>
-                                <td>#<?php echo $order_invoice;?></td>
+                                
                                  <td>
                                      <img src="../img/<?php echo $img1;?>" width="100%">
                                  </td>
@@ -81,17 +81,7 @@ if(!isset($_SESSION['email'])){
                                  </td>
                                  <td><?php echo $order_amount;?> </td>
                                  <td><?php echo $order_date;?></td>
-                                 <td><?php 
-                                   if($order_status == 'pending'){
-                                     echo "<i class='far fa-exclamation-circle text-warning'></i> $order_status";
-                                   }
-                                  else if($order_status == 'verified'){
-                                    echo "<i class='far fa-check-circle text-success'></i> $order_status";
-                                  }
-                                  else if($order_status == 'delivered'){
-                                    echo "<i class='far fa-truck text-primary'></i> $order_status";
-                                  }
-                                 ?> </td>
+                                 
                                  
                              </tr>   
                             <?php

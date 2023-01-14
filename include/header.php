@@ -5,7 +5,7 @@ include_once('include/dbcon.php');?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>E-Commerce</title>
+    <title>BrookWood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" >
@@ -31,8 +31,8 @@ include_once('include/dbcon.php');?>
         ?>
        <!--header ---> 
              <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-               <a href="" class="navbar-brand"> 
-                   <img src="../img/favicon.png" width="40px" height="40px"> Online <sapn class="font-weight-bold">Furniture</sapn> Shop
+               <a href="index.php" class="navbar-brand"> 
+                   <img src="img/favicon.png" width="40px" height="40px"> Brook<sapn class="font-weight-bold">Wood</sapn>
                </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapisblenav" aria-controls="collapsiblenav">
                  <span class="navbar-toggler-icon"></span>

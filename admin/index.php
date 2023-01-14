@@ -18,109 +18,17 @@ if(isset($_SESSION['email'])){
         </div>
         <!---Main Column -->
         <div class="col-md-9 col-lg-9">
-             <!-- Icon Cards-->
-                <div class="row">
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-success o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fad fa-shopping-cart fa-2x" ></i>
-                </div>
-                <?php  
-                   $query = "SELECT * FROM customer_order WHERE order_status='pending'";
-                   $run   = mysqli_query($con,$query);
-                   $num_new_orders = mysqli_num_rows($run);
-                 ?>
-                <div class="mr-5">  <span style="font-size:24px;"><?php echo $num_new_orders;?></span> Pending Orders</div>
+             
 
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="pending_furniture_pro.php">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-warning o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fad fa-truck fa-2x"></i>
-                </div>
-                <div class="mr-5">
-                <?php  
-                   $query = "SELECT * FROM customer_order WHERE order_status='delivered'";
-                   $run   = mysqli_query($con,$query);
-                   $num_delivered_orders = mysqli_num_rows($run);
-                 ?> 
-                  <span style="font-size:24px;"><?php echo $num_delivered_orders;?> </span> Delivered Orders</div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="delivered_furniture_pro.php">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fad fa-fw fa-users fa-2x"></i>
-                </div>
-                <div class="mr-5">
-                <?php  
-                   $query = "SELECT * FROM customer";
-                   $run   = mysqli_query($con,$query);
-                   $num_customer = mysqli_num_rows($run);
-                 ?>
-                   <span style="font-size:24px;"><?php echo $num_customer;?></span> Active Customers
-                  </div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="customers.php">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-danger o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fad fa-sack fa-2x"></i>
-                </div>
-                <div class="mr-5">
-                <?php  
-                   $query = "SELECT SUm(product_amount) as 'earn' FROM customer_order";
-                   $run   = mysqli_query($con,$query);
-                   $row=mysqli_fetch_array($run);
-                   $earning = $row['earn'];
-                     
-                 ?>
-                  <span style="font-size:24px;"><?php echo $earning; ?></span> PKR Earned
-                </div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-     
+        <div class="row">
+         
+                
                 <!-- DataTables Example -->
                 <h3 class="mt-5">New Orders</h3>
             <table class="table table-responsive table-hover mt-3">
                       <thead class="thead-light">
                           <tr>
-                              <th>#Invoice No.</th>
+                              
                               <th>Order ID</th>
                               <th>Product_id</th>
                               <th>Product Image</th>
@@ -138,12 +46,12 @@ if(isset($_SESSION['email'])){
                        <tbody class="text-center">
                           <?php
                           
-                                    $order_query = "SELECT * FROM customer_order WHERE order_status='pending' ORDER BY order_id LIMIT 5";
+                                    $order_query = "SELECT * FROM customer_order  ORDER BY order_id LIMIT 5";
                                     $run = mysqli_query($con,$order_query);
                         
                                     if(mysqli_num_rows($run) > 0){
                                         while($order_row = mysqli_fetch_array($run)){
-                                            $order_invoice = $order_row['invoice_no'];
+                                            
                                             $order_id      = $order_row['order_id'];
                                             $cust_id       = $order_row['customer_id'];
                                             $cust_email    = $order_row['customer_email'];
@@ -151,7 +59,7 @@ if(isset($_SESSION['email'])){
                                             $order_qty     = $order_row['products_qty'];
                                             $order_amount  = $order_row['product_amount'];
                                             $order_date    = $order_row['order_date'];
-                                            $order_status  = $order_row['order_status'];
+                                            
 
                                             $pr_query = "SELECT * FROM furniture_product fp INNER JOIN categories cat ON fp.category = cat.id WHERE pid = $order_pro_id ";
                                             $pr_run   = mysqli_query($con,$pr_query);
@@ -164,9 +72,7 @@ if(isset($_SESSION['email'])){
                                               
                             ?> 
                              <tr>
-                                 <td>
-                                 <?php echo $order_invoice;?>
-                                 </td>
+                                 
                                  <td>
                                  <?php echo $order_id;?>
                                  </td>

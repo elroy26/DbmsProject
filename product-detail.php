@@ -58,7 +58,7 @@
                  }
                ?>
             </p>
-            <p><span class="mr-1"><strong>PKR <?php echo $price; ?></strong></span></p>
+            <p><span class="mr-1"><strong>INR <?php echo $price; ?></strong></span></p>
             <p class="pt-1"><?php echo $detail; ?></p>
             <div class="table-responsive">
               <table class="table table-borderless mb-0">

@@ -62,9 +62,7 @@ require_once('include/dbcon.php');
              $image = $row['image'];
             }
          ?>
-       <li class="nav-item">
-        <a class="nav-link" href="profile.php"><img src="img/<?php echo $image;?>" alt="user" class="rounded-circle" width="37px" height="32px"></a>
-      </li>
+       
       
     </ul>
   </div>  

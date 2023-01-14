@@ -26,7 +26,7 @@
         $city     = $_POST['city'];
         $code     = $_POST['code'];
         $number   = $_POST['phone_number'];
-        $invoice  = mt_rand();
+        
         $date     = date("d-m-Y"); 
         
 
@@ -49,9 +49,9 @@
                 
               $checkout_query  = "INSERT INTO `customer_order`(`customer_id`, `customer_email`,
               `customer_fullname`, `customer_address`, `customer_city`, `customer_pcode`, `customer_phonenumber`,
-              `product_id`, `product_amount`, `invoice_no`, `products_qty`, `order_date`, `order_status`)
+              `product_id`, `product_amount`, `products_qty`, `order_date`)
               VALUES('$customer_id','$customer_email','$fullname','$address','$city','$code','$number',$db_pro_id,
-              $single_pro_total_price,'$invoice',$db_pro_qty,'$date','pending')";
+              $single_pro_total_price,$db_pro_qty,'$date')";
         
                   if(mysqli_query($con,$checkout_query)){
                         $del_query = "DELETE FROM cart where cust_id = $customer_id";

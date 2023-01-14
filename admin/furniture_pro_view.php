@@ -35,12 +35,7 @@
                  <div class="col-md-7">
                    <h2 class="display-4 ml-2 mt-4">View Furniture Products:</h2>
                  </div> 
-                 <div class="col-md-4">
-                    <div class="font-weight-bold mt-5 text-right" style="font-size:24px;">
-                    <label>Sort: </label> 
-                    <a href="furniture_pro_view.php?status=publish">Publish</a> | <a href="furniture_pro_view.php?status=draft">Draft</a>
-                    </div>
-                 </div> 
+                 
             
                 </div>
                <hr>
@@ -56,7 +51,7 @@
                               <th>Detail</th>
                               <th>Status</th>
                               <th>Date</th>
-                              <th colspan="4">Actions(Edit/Del)</th>
+                              
                               <th colspan="4"></th>
                           </tr>
                       </thead>
@@ -115,11 +110,7 @@
                                    
                                    
                                    ?>
-                                    <a title="Edit Product" href="furniture_pro_edit.php?pid=<?php echo $pid;?> " class="btn btn-primary btn-sm">
-                                    <i class="fal fa-edit"></i>
-                                    </a>
-
-                                    <a title="Delete Product" href="furniture_pro_view.php?del=<?php echo $pid;?>" class="btn btn-danger btn-sm">X </a>  
+                                      
                                  </td>
                              </tr>   
                            <?php 

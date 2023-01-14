@@ -41,7 +41,7 @@
                           <tr>
                               <th colspan="2">Product Detail</th>
                               <th>Quantity</th>
-                              <th>Price (Pkr)</th>
+                              <th>Price (INR)</th>
                               <th>Total</th>
                               <th colspan="4">Actions(Edit/Del)</th>
                               <th colspan="4"></th>
@@ -136,9 +136,9 @@
                         
                     </div>
                     <div class="col-md-6 col-sm-6 col-6">
-                        <h6 class="text-right font-weight-normal">PKR <?php echo $sub_total;?></h6>
-                        <h6 class="text-right font-weight-normal">PKR <?php echo $shipping_cost;?></h6>
-                        <h5 class="text-right font-weight-bold">PKR <?php echo $total;?></h5>
+                        <h6 class="text-right font-weight-normal">INR <?php echo $sub_total;?></h6>
+                        <h6 class="text-right font-weight-normal">INR <?php echo $shipping_cost;?></h6>
+                        <h5 class="text-right font-weight-bold">INR <?php echo $total;?></h5>
                     </div>
                 </div>
                 
