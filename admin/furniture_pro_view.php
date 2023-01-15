@@ -47,9 +47,9 @@
                               <th>Title</th>
                               <th>Category</th>
                               <th>Size</th>
-                              <th>Price (Pkr)</th>
+                              <th>Price (INR)</th>
                               <th>Detail</th>
-                              <th>Status</th>
+                              
                               <th>Date</th>
                               
                               <th colspan="4"></th>
@@ -58,11 +58,9 @@
                         <tbody>
                           <?php
 
-                                       if(isset($status)){
-                                           $pr_query = "SELECT * FROM furniture_product fp INNER JOIN categories cat ON fp.category = cat.id WHERE status = '$status' order by pid";
-                                       } else{
-                                           $pr_query = "SELECT * FROM furniture_product fp INNER JOIN categories cat ON fp.category = cat.id order by pid";
-                                       }
+                                     
+                                       $pr_query = "SELECT * FROM furniture_product fp INNER JOIN categories cat ON fp.category = cat.id order by pid";
+                                     
                                         $pr_run   = mysqli_query($con,$pr_query);
                                         
                                         if(mysqli_num_rows($pr_run) > 0){
@@ -74,7 +72,7 @@
                                               $price = $pr_row['price'];    
                                               $detail  = $pr_row['detail'];
                                               $image = $pr_row['image'];
-                                              $status = $pr_row['status'];
+                                             
                                               $date = $pr_row['date'];
                                               
 
@@ -103,7 +101,7 @@
                                  <td> 
                                  <?php echo $detail ?>  
                                 </td>
-                                <td><?php echo $status;?></td>
+                                
                                 <td><?php echo $date;?></td>
                                 <td colspan="20" class="text-center"> 
                                  <?php 

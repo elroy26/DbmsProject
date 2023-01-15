@@ -10,7 +10,7 @@
 
   $required_pro = 12;
 
-  $query = "SELECT * FROM furniture_product Where status = 'publish' ORDER BY pid";
+  $query = "SELECT * FROM furniture_product  ORDER BY pid";
   $run   = mysqli_query($con,$query);
   $count_rows = mysqli_num_rows($run);
 
@@ -125,7 +125,7 @@
                       $p_query = "SELECT * FROM furniture_product WHERE title LIKE '%$search%' ";
                   }
                 else{
-                    $p_query = "SELECT * FROM furniture_product WHERE status='publish' ORDER BY pid DESC LIMIT $product_start,$required_pro";
+                    $p_query = "SELECT * FROM furniture_product ORDER BY pid DESC LIMIT $product_start,$required_pro";
                   }
                  
                   $p_run   = mysqli_query($con,$p_query);

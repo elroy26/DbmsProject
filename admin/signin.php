@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Furniture Shop Management System | Admin - Dashboard</title>
+  <title>BrookWood Furniture | Admin - Dashboard</title>
 
   <link href="css/mdb.min.css" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -69,8 +69,8 @@
         <div class="container mt-5">
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
-              <h1 class="login-heading text-center mb-2">Welcome on </h1>
-              <h3 class="login-heading text-center mb-4">Furniture Shop Management System</h3>
+              <h1 class="login-heading text-center mb-2">Welcome to </h1>
+              <h3 class="login-heading text-center mb-4">BrookWood Furnitures</h3>
               <form method="post">
               <?php
               if(isset($error)){
