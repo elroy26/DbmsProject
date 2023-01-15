@@ -66,9 +66,8 @@ if(isset($_SESSION['email'])){
      <div class="col-md-9">
        <h3>Personal Details:</h3><hr>
        <h6>CHANGE PERSONAL DETAILS</h6>
-        <p>You can access and modify your personal details (name, billing address, telephone number, etc.) 
-          in order to facilitate your future
-           purchases and to notify us of any change in your contact details.</p>
+        <p>You can access and modify your personal details in order to speed up your
+              future purchases</p>
           
           <?php 
           

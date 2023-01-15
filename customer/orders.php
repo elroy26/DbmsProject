@@ -37,7 +37,7 @@ if(!isset($_SESSION['email'])){
                               <th width="120px">Product image</th>
                               <th>Product name</th>
                               <th>Product quantity</th>
-                              <th>Total Price (Pkr)</th>
+                              <th>Total Price (INR)</th>
                               <th>Date</th>
                               
                               

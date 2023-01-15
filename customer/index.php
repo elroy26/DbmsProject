@@ -24,8 +24,8 @@ if(!isset($_SESSION['email'])){
            <p>Check the status and information regarding your online orders</p>
 
            <a href="personal-detail.php"> <h6 class="text-primary">PERSONAL DETAILS</h6></a>
-           <p>You can access and modify your personal details (name, billing address, telephone number, etc.) in order to speed up your
-              future purchases and notify us of changes in your contact details.</p>
+           <p>You can access and modify your personal details in order to speed up your
+              future purchases</p>
 
            
 

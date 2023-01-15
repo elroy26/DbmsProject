@@ -35,7 +35,7 @@ if(isset($_SESSION['email'])){
                               <th>Product Category</th>
                               <th>Customer Id</th>
                               <th>Customer Email</th>
-                              <th>Price (Pkr)</th>
+                              <th>Price (INR)</th>
                               <th>Quantity</th>
                               <th>Order Date</th>
                               <th>Verify Order</th>

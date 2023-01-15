@@ -15,7 +15,7 @@ require_once('include/dbcon.php');
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Furniture Shop Management System | Admin - Dashboard</title>
+  <title>BrookWood Furnitures | Admin - Dashboard</title>
 
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Custom styles for this template-->
@@ -39,9 +39,7 @@ require_once('include/dbcon.php');
       <li class="nav-item">
         <a class="nav-link" href="../index.php" target="_blank"><i class="fas fa-store"></i> Furniture Shop </a>
       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="furniture_pro.php"><i class="fas fa-plus"></i> Add Furniture Product</a>
-      </li>
+       
       <li class="nav-item">
         <a class="nav-link" href="category.php"><i class="fas fa-border-all"></i> Add Categories</a>
       </li>
