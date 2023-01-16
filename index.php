@@ -3,8 +3,8 @@
 if(isset($_SESSION['email'])){
   $custid = $_SESSION['id'];
 
-  if(isset($_GET['cart_id'])){
-    $p_id = $_GET['cart_id'];
+  if(isset($_POST['cart_id'])){
+    $p_id = $_POST['cart_id'];
 
     $sel_cart = "SELECT * FROM cart WHERE cust_id = $custid and product_id = $p_id ";
     $run_cart    = mysqli_query($con,$sel_cart);
@@ -71,16 +71,7 @@ if(isset($_SESSION['email'])){
       <!--Latest product---->
       <section >
         <div class="container pt-5 pb-5">
-        <div >
-          <?php 
-          if(isset($msg)){
-            echo $msg;
-           }
-          else if(isset($error)){
-                  echo $error;
-                 }
-              ?>
-          </div>
+        
 
            <h1 class="text-center">Latest Products</h1>
   

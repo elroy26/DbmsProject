@@ -15,8 +15,8 @@ if(!isset($_SESSION['email'])){
         </div>
       
         <?php
-        if(isset($_GET['del'])){
-            $del   = $_GET['del'];
+        if(isset($_POST['del'])){
+            $del   = $_POST['del'];
             $query = "DELETE FROM categories WHERE id = $del";
             $run   = mysqli_query($con,$query);
         }

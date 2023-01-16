@@ -1,8 +1,8 @@
 <?php include('include/header.php');
 
 
-  if(isset($_GET['page'])){
-    $page_id = $_GET['page'];
+  if(isset($_POST['page'])){
+    $page_id = $_POST['page'];
    }
    else{
     $page_id = 1;

@@ -5,7 +5,7 @@ include_once('include/dbcon.php');?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>E-Commerce</title>
+    <title>BrookWood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" >
