@@ -28,7 +28,7 @@
                           $postal_code = $_POST['code'];
                           $number = $_POST['phone_number'];
                           
-                          if(!empty($fullname) or !empty($email) or !empty($password) or !empty($conf_pass) or !empty($address) or !empty($city) or !empty($postal_code) or !empty($number)){
+                          if(!empty($fullname) and !empty($email) and !empty($password) and !empty($conf_pass) and !empty($address) and !empty($city) and !empty($postal_code) and !empty(strlen($number)===10)){
 
                             if($password === $conf_pass){
 
@@ -47,7 +47,7 @@
                             }
                           }
                             else{
-                          $error="All (*) Fields Required";
+                          $error="Please enter the details correctly!!! ";
                       }
                       }
                     
@@ -71,11 +71,13 @@
                       ?>
                     <div class="form-group">
                     
-                      <input type="text" name="fullname" placeholder="Full Name" class="form-control" >
+                      <input type="text" name="fullname" placeholder="Full Name" class="form-control"  value="<?php echo 
+isset($_POST['fullname']) ? $_POST['fullname']:'';?>">
                      </div>
 
                     <div class="form-group">
-                      <input type="text" name="email" placeholder="Email" class="form-control" >
+                      <input type="text" name="email" placeholder="Email" class="form-control" value="<?php echo 
+isset($_POST['email']) ? $_POST['email']:'';?>" >
                      </div>
 
                       <div class="row">
@@ -93,26 +95,30 @@
                   
 
                       <div class="form-group">
-                        <input type="text" name="address" placeholder="Address" class="form-control" >
+                        <input type="text" name="address" placeholder="Address" class="form-control" value="<?php echo 
+isset($_POST['address']) ? $_POST['address']:'';?>" >
                     </div>
                      
                     <div class="row">
                       <div class="col-md-6 col-6">
                         <div class="form-group">
-                          <input type="text" name="city" placeholder="City" class="form-control" >
+                          <input type="text" name="city" placeholder="City" class="form-control" value="<?php echo 
+isset($_POST['city']) ? $_POST['city']:'';?>">
                        </div>
                       </div>
                       
                       <div class="col-md-6 col-6">
                         <div class="form-group">
-                          <input type="number" name="code" placeholder="Postal code" class="form-control" >
+                          <input type="number" name="code" placeholder="Postal code" class="form-control" value="<?php echo 
+isset($_POST['code']) ? $_POST['code']:'';?>">
                        </div>
                       </div>
 
                     </div>
 
                     <div class="form-group">
-                      <input type="number" name="phone_number" placeholder="Phone Number" class="form-control" >
+                      <input type="telephone" name="phone_number" placeholder="Phone Number" class="form-control" pattern="[0,1,2,3,4,5,6,7,8,9]{10}" maxlength="10" value="<?php echo 
+isset($_POST['phone_number']) ? $_POST['phone_number']:'';?>" >
                    </div>
 
                       <div class="form-group text-center mt-4">
