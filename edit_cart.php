@@ -9,8 +9,8 @@
         if(isset($_SESSION['id'])){
             $customer_id = $_SESSION['id'];
             
-            if(isset($_GET['cart_id'])){
-                $edit_cart = $_GET['cart_id'];
+            if(isset($_POST['cart_id'])){
+                $edit_cart = $_POST['cart_id'];
             
                 //update Query
                 if(isset($_POST['update'])){
